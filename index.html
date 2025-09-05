@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -28,7 +30,9 @@
                         <li><a><img src="./assets/fa-arrow-right-from-bracket.png" alt="">Log Out</a></li>
                     </ul>
                 </div>
-                <span class="text-xl font-bold">English</span><img src="./assets/logo.png" alt=""><span class="bang font-semibold text-lg">জানালা</span>
+                <div class="flex items-center gap-1">
+                    <span class="text-xl font-bold">English</span><img src="./assets/logo.png" alt=""><span class="bang font-semibold text-lg">জানালা</span>
+                </div>
             </div>
 
             <div class="navbar-end hidden lg:flex">
@@ -42,16 +46,33 @@
     </header>
 
     <main>
-        <section>
-            <div class="">
-                <h1></h1>
-                <p></p>
-                <input type="text">
-                <input type="text">
-                <button></button>
+        <!-- banner section -->
+        <section class="w-11/12 mx-auto flex flex-col-reverse lg:flex-row lg:justify-between items-center">
+            <div class="flex-1 space-y-3">
+                <h1 class="text-4xl font-bold"><span class="text-sky-500">English</span> is Easy!!</h1>
+                <p class="bang text-base text-[#18181b]">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+                <input type="text" class="px-4 py-2 rounded-lg border-gray-300" placeholder="Enter Your Name">
+                <input type="text" class="px-4 py-2 rounded-lg border-gray-300" placeholder="........">
+                <br><button class="btn btn-primary text-base py-2">Get Started</button>
             </div>
-            <img src="./assets/hero-student.png" alt="">
+            <img src="./assets/hero-student.png" class="flex-1" alt="">
         </section>
+
+
+        <!-- let's Learn vocabularies -->
+         <section class="w-11/12 mx-auto mt-16">
+            <h1 class="text-4xl font-bold text-center mb-8"><span class="text-sky-500">Let's</span> Learn Vocabularies</h1>
+
+            <div id="vocab-container" class="flex gap-5 flex-wrap justify-center">
+
+            </div>
+         </section>
+
+         <!-- words -->
+          
     </main>
+
+
+    <script src="JS/index.js"></script>
 </body>
 </html>
